@@ -12,6 +12,8 @@ The files have been updated to use a more recent version of Spark (2.4.0) and th
 
 ## Usage: ##
 
-Simply run ```docker-compose up``` from the root of the repo to spin up a Spark master and two Spark workers.
+You will need to build the images locally before being able to use them, since they are not available on Docker Hub.  To do this, simply run the script: ```build-images.sh``` using BASH.
+
+Run ```docker-compose up``` from the root of the repo to spin up a Spark master and two Spark workers.
 
 To increase the number of workers, simply add additional entries to the ```docker-compose.yml``` file.
